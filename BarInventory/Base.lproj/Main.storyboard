@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="jrm-LI-LHd" kind="show" id="5X1-Fr-y1l"/>
+                                    <segue destination="jrm-LI-LHd" kind="show" identifier="showTypes" id="5X1-Fr-y1l"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,7 +58,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="EyQ-UV-XR1" kind="show" id="YEu-DZ-Zbw"/>
+                                    <segue destination="EyQ-UV-XR1" kind="show" identifier="showCard" id="YEu-DZ-Zbw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YA4-bN-XO8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="generalStatus" id="YA4-bN-XO8">
                                 <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA4-bN-XO8" id="083-7Q-uvZ">
@@ -178,7 +178,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="u9v-Ag-nLZ" kind="show" trigger="accessoryAction" id="BKW-JA-jyu"/>
+                                    <segue destination="u9v-Ag-nLZ" kind="show" identifier="showGeneralCard" trigger="accessoryAction" id="BKW-JA-jyu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
