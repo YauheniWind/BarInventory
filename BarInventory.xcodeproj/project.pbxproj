@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AFD13C293384DF00EF529C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13B293384DF00EF529C /* TabViewController.swift */; };
+		50AFD13E293385CF00EF529C /* ListOfAlcoholViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13D293385CF00EF529C /* ListOfAlcoholViewController.swift */; };
+		50AFD1402933866D00EF529C /* TypesOfAlcoholViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13F2933866D00EF529C /* TypesOfAlcoholViewController.swift */; };
+		50AFD1422933869900EF529C /* AlcoholCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD1412933869900EF529C /* AlcoholCardViewController.swift */; };
+		50AFD1462933879D00EF529C /* GeneralTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD1452933879D00EF529C /* GeneralTypesViewController.swift */; };
+		50AFD148293387D800EF529C /* GeneralCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD147293387D800EF529C /* GeneralCardViewController.swift */; };
 		50EE288229337CF00000FF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE288129337CF00000FF57 /* AppDelegate.swift */; };
 		50EE288429337CF00000FF57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE288329337CF00000FF57 /* SceneDelegate.swift */; };
-		50EE288629337CF00000FF57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE288529337CF00000FF57 /* ViewController.swift */; };
 		50EE288929337CF00000FF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EE288729337CF00000FF57 /* Main.storyboard */; };
 		50EE288B29337CF30000FF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EE288A29337CF30000FF57 /* Assets.xcassets */; };
 		50EE288E29337CF30000FF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EE288C29337CF30000FF57 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50AFD13B293384DF00EF529C /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		50AFD13D293385CF00EF529C /* ListOfAlcoholViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAlcoholViewController.swift; sourceTree = "<group>"; };
+		50AFD13F2933866D00EF529C /* TypesOfAlcoholViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfAlcoholViewController.swift; sourceTree = "<group>"; };
+		50AFD1412933869900EF529C /* AlcoholCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholCardViewController.swift; sourceTree = "<group>"; };
+		50AFD1452933879D00EF529C /* GeneralTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTypesViewController.swift; sourceTree = "<group>"; };
+		50AFD147293387D800EF529C /* GeneralCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCardViewController.swift; sourceTree = "<group>"; };
 		50EE287E29337CF00000FF57 /* BarInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EE288129337CF00000FF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50EE288329337CF00000FF57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50EE288529337CF00000FF57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50EE288829337CF00000FF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50EE288A29337CF30000FF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50EE288D29337CF30000FF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50AFD13A2933848000EF529C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD13B293384DF00EF529C /* TabViewController.swift */,
+				50AFD143293386E800EF529C /* DetailedInformation */,
+				50AFD1442933871500EF529C /* GeneralInfomation */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		50AFD143293386E800EF529C /* DetailedInformation */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD13D293385CF00EF529C /* ListOfAlcoholViewController.swift */,
+				50AFD13F2933866D00EF529C /* TypesOfAlcoholViewController.swift */,
+				50AFD1412933869900EF529C /* AlcoholCardViewController.swift */,
+			);
+			path = DetailedInformation;
+			sourceTree = "<group>";
+		};
+		50AFD1442933871500EF529C /* GeneralInfomation */ = {
+			isa = PBXGroup;
+			children = (
+				50AFD1452933879D00EF529C /* GeneralTypesViewController.swift */,
+				50AFD147293387D800EF529C /* GeneralCardViewController.swift */,
+			);
+			path = GeneralInfomation;
+			sourceTree = "<group>";
+		};
 		50EE287529337CF00000FF57 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +97,7 @@
 			children = (
 				50EE288129337CF00000FF57 /* AppDelegate.swift */,
 				50EE288329337CF00000FF57 /* SceneDelegate.swift */,
-				50EE288529337CF00000FF57 /* ViewController.swift */,
+				50AFD13A2933848000EF529C /* ViewControllers */,
 				50EE288729337CF00000FF57 /* Main.storyboard */,
 				50EE288A29337CF30000FF57 /* Assets.xcassets */,
 				50EE288C29337CF30000FF57 /* LaunchScreen.storyboard */,
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50EE288629337CF00000FF57 /* ViewController.swift in Sources */,
+				50AFD13C293384DF00EF529C /* TabViewController.swift in Sources */,
+				50AFD148293387D800EF529C /* GeneralCardViewController.swift in Sources */,
 				50EE288229337CF00000FF57 /* AppDelegate.swift in Sources */,
+				50AFD13E293385CF00EF529C /* ListOfAlcoholViewController.swift in Sources */,
 				50EE288429337CF00000FF57 /* SceneDelegate.swift in Sources */,
+				50AFD1462933879D00EF529C /* GeneralTypesViewController.swift in Sources */,
+				50AFD1402933866D00EF529C /* TypesOfAlcoholViewController.swift in Sources */,
+				50AFD1422933869900EF529C /* AlcoholCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +337,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.BarInventory";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +368,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.BarInventory";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
