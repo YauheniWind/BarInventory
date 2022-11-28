@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504EFD542934CFB800946C54 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EFD532934CFB800946C54 /* DataManager.swift */; };
+		504EFD562934D49E00946C54 /* Alcohol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EFD552934D49E00946C54 /* Alcohol.swift */; };
 		50AFD13C293384DF00EF529C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13B293384DF00EF529C /* TabViewController.swift */; };
 		50AFD13E293385CF00EF529C /* ListOfAlcoholViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13D293385CF00EF529C /* ListOfAlcoholViewController.swift */; };
 		50AFD1402933866D00EF529C /* TypesOfAlcoholViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFD13F2933866D00EF529C /* TypesOfAlcoholViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		504EFD532934CFB800946C54 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		504EFD552934D49E00946C54 /* Alcohol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alcohol.swift; sourceTree = "<group>"; };
 		50AFD13B293384DF00EF529C /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		50AFD13D293385CF00EF529C /* ListOfAlcoholViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAlcoholViewController.swift; sourceTree = "<group>"; };
 		50AFD13F2933866D00EF529C /* TypesOfAlcoholViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfAlcoholViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504EFD4F2934CF5F00946C54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504EFD552934D49E00946C54 /* Alcohol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		504EFD502934CF8100946C54 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				504EFD532934CFB800946C54 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		50AFD13A2933848000EF529C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +115,8 @@
 		50EE288029337CF00000FF57 /* BarInventory */ = {
 			isa = PBXGroup;
 			children = (
+				504EFD502934CF8100946C54 /* Services */,
+				504EFD4F2934CF5F00946C54 /* Model */,
 				50EE288129337CF00000FF57 /* AppDelegate.swift */,
 				50EE288329337CF00000FF57 /* SceneDelegate.swift */,
 				50AFD13A2933848000EF529C /* ViewControllers */,
@@ -179,11 +201,13 @@
 			files = (
 				50AFD13C293384DF00EF529C /* TabViewController.swift in Sources */,
 				50AFD148293387D800EF529C /* GeneralCardViewController.swift in Sources */,
+				504EFD562934D49E00946C54 /* Alcohol.swift in Sources */,
 				50EE288229337CF00000FF57 /* AppDelegate.swift in Sources */,
 				50AFD13E293385CF00EF529C /* ListOfAlcoholViewController.swift in Sources */,
 				50EE288429337CF00000FF57 /* SceneDelegate.swift in Sources */,
 				50AFD1462933879D00EF529C /* GeneralTypesViewController.swift in Sources */,
 				50AFD1402933866D00EF529C /* TypesOfAlcoholViewController.swift in Sources */,
+				504EFD542934CFB800946C54 /* DataManager.swift in Sources */,
 				50AFD1422933869900EF529C /* AlcoholCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
