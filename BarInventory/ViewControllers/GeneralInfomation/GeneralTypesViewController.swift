@@ -8,6 +8,8 @@
 import UIKit
 
 class GeneralTypesViewController: UITableViewController {
+    
+    var alcohol: [Alcohol]!
 
     override func viewDidLoad() {
         super.viewDidLoad()

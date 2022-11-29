@@ -7,7 +7,7 @@
 
 class DataManager {
   
-  static let shered = DataManager()
+  static let shared = DataManager()
   
   let brandsOfVodka = ["Tito’s Handmade Vodka", "Smirnoff",
                        "New Amsterdam Vodka", "Svedka", "Absolut",
@@ -18,7 +18,7 @@ class DataManager {
   
   let brandsOfRum = ["Malibu", "Bacardi", "Captain Morgan"]
   
-  let brandsOfBrandyAndCognac = ["E & J", "Hennessy"]
+  let brandsOfBrandyAndCognac = ["E and J", "Hennessy"]
   
   let brandsOfTequila = ["Jose Cuervo", "Patron"]
   
