@@ -9,6 +9,8 @@ import UIKit
 
 class TabViewController: UITabBarController {
 
+    var alcohol: [Alcohol]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +27,8 @@ class TabViewController: UITabBarController {
         guard let generalTypesVC = viewControllers?.last as? GeneralTypesViewController else { return }
         
       
-        let alcohol = Alcohol.getAlcoholList()
+        let alcohol: [Alcohol] = Alcohol.getAlcoholList()
+        
         
         listVC.alcohol = alcohol
         generalTypesVC.alcohol = alcohol

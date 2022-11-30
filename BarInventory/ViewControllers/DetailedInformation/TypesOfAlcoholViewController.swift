@@ -21,13 +21,12 @@ class TypesOfAlcoholViewController: UITableViewController {
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
+//        alcohol.count
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        5
+        alcohol.brands.count
     }
 
     
@@ -35,26 +34,25 @@ class TypesOfAlcoholViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath)
 
         
-       
-        
-//        var content = cell.defaultContentConfiguration()
-//        content.text = alcohol.brandsOfVodka
-//        cell.contentConfiguration = content
-        
-//        let alcohol = alcohol[indexPath.row]
+//        let alcohols = alcohol[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
+     
+
+            
         switch indexPath.row {
         case 0:
-            content.text = alcohol.brandsOfVodka
-            cell.contentConfiguration = content
+            content.text = alcohol.brands
         case 1:
-            content.text = alcohol.brandsOfRum
-            cell.contentConfiguration = content
+            content.text = alcohol.brands
+        case 2:
+            content.text = alcohol.brands
+        case 3:
+            content.text = alcohol.brands
         default:
-            content.text = alcohol.brandsOfWhiskey
-            cell.contentConfiguration = content
+            content.text = alcohol.brands
         }
+        cell.contentConfiguration = content
         return cell
     }
     

@@ -20,7 +20,7 @@ class ListOfAlcoholViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        alcohol.count
+        6
     }
 
     

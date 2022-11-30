@@ -7,20 +7,15 @@
 
 class DataManager {
   
-  static let shared = DataManager()
+  static let shered = DataManager()
   
-  let brandsOfVodka = ["Tito’s Handmade Vodka", "Smirnoff",
-                       "New Amsterdam Vodka", "Svedka", "Absolut",
-                       "Ketel One Vodka"]
-  
-  let brandsOfWhiskey = ["Jim Beam Family", "Jack Daniels",
-                         "Jameson", "Crown Royal", "Evan Willaims"]
-  
-  let brandsOfRum = ["Malibu", "Bacardi", "Captain Morgan"]
-  
-  let brandsOfBrandyAndCognac = ["E and J", "Hennessy"]
-  
-  let brandsOfTequila = ["Jose Cuervo", "Patron"]
+  let brands: [String:[String]] = ["brandsOfWodka": ["Tito’s Handmad Vodka", "Smirnoff", "New Amsterdam Vodka",
+                                                     "Svedka", "Absolut","Ketel One Vodka"],
+                                   "brandsOfWhiskey": ["Jim Beam Family", "Jack Daniels", "Jameson",
+                                                       "Crown Royal", "Evan Willaims"],
+                                   "brandsOfRum": ["Malibu", "Bacardi", "Captain Morgan"],
+                                   "brandsOfBrandyAndCognac": ["E & J", "Hennessy"],
+                                   "brandsOfTequila": ["Jose Cuervo", "Patron"]]
   
   let category = ["Vodka", "Rum", "Whiskey",
                   "Cordials and Liqueurs",
