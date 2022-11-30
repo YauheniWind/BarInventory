@@ -9,6 +9,10 @@ import UIKit
 
 class GeneralCardViewController: UIViewController {
 
+    
+    var alcohol: [Alcohol]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

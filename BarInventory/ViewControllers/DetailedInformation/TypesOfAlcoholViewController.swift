@@ -9,37 +9,53 @@ import UIKit
 
 class TypesOfAlcoholViewController: UITableViewController {
 
+    
+    var alcohol: Alcohol!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        alcohol.count
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        alcohol.brands.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath)
 
-        // Configure the cell...
+        
+//        let alcohols = alcohol[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        
+     
 
+            
+        switch indexPath.row {
+        case 0:
+            content.text = alcohol.brands
+        case 1:
+            content.text = alcohol.brands
+        case 2:
+            content.text = alcohol.brands
+        case 3:
+            content.text = alcohol.brands
+        default:
+            content.text = alcohol.brands
+        }
+        cell.contentConfiguration = content
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
