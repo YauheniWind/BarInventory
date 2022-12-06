@@ -21,9 +21,9 @@ class DataManager {
                   "Cordials and Liqueurs",
                   "Tequila", "Brandy & Cognac"]
   
-  let capacity = ["0.5", "0.7", "1.0"]
+  let capacity = ["0.3", "0.5", "0.7", "1.0", "5.0", "10.0"]
   
-  let generalCapacity = ["5", "10", "1", "30"]
+  let generalCapacity = ["5", "10", "1", "30", "15", "3"]
   
   private init() {}
 }

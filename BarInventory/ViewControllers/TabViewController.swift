@@ -12,18 +12,20 @@ class TabViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        sendData()
     }
     
 
-    /*
-    // MARK: - Navigation
+  private func sendData() {
+       guard let viewControllers = viewControllers else { return }
+     
+       let alcohol = Alcohol.getAlcoholList()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+       for viewController in viewControllers {
+         if let alcoholListVC = viewController as? ListOfAlcoholViewController {
+           alcoholListVC.alcoholOne = alcohol
+         }
+       }
+   }
 
 }

@@ -10,11 +10,11 @@ import Foundation
 
 struct Alcohol {
   
-  let brands: String
+  let brandsOfAlcohol: [String]
   
-  let category: String
-  let capacity: String
-  let generalCapacity: String
+  let categoryOfAlcohol: String
+  let capacityOfAlcohol: String
+  let generalCapacityOfAlcohol: String
   
 }
 
@@ -36,16 +36,20 @@ extension Alcohol {
       generalCapacity.count
     )
     
-    for brand in brands.values {
-      for value in brand {
-        for index in 0..<iteretionCount {
-          let alcohol = Alcohol(brands: value,
-                                category: category[index],
-                                capacity: capacity[index],
-                                generalCapacity: generalCapacity[index])
-          alcohols.append(alcohol)
-        }
+    var alcoBar: [String] = []
+    
+    for brands in brands.values {
+      for bar in brands {
+        alcoBar.append(bar)
       }
+    }
+    
+    for index in 0..<iteretionCount {
+        let alcohol = Alcohol(brandsOfAlcohol: alcoBar,
+                              categoryOfAlcohol: category[index],
+                              capacityOfAlcohol: capacity[index],
+                              generalCapacityOfAlcohol: generalCapacity[index])
+        alcohols.append(alcohol)
     }
     
     return alcohols
